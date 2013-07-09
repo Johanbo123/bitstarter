@@ -2,7 +2,7 @@
 "use strict";
 var fs = require("fs");
 var express = require('express');
-var app = express();
+var app = express.createServer(express.logger());
 var fileName = "index.html";
 var buffer, buf_len, data;
 var fileRead = false;
